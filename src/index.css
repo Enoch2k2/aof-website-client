@@ -6,9 +6,47 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
+  font-family: cursive, sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  float: right;
+}
+
+.brand-logo {
+  position: relative;
+  float: left;
+  font-size: 28px;
+  top: 18px;
+  left: 10px;
+  font-weight: bold;
+}
+
+nav {
+  background-color: rgba(100, 100, 100, .1);
+  height: 75px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 13px;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
