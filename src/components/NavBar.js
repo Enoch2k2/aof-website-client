@@ -3,11 +3,11 @@ import React, { Component } from 'react'
 export class NavBar extends Component {
   render() {
     return (
-      <nav className="clearfix">
-        <span className="brand-logo">Architects Of Fate</span>
+      <nav className="container clearfix">
+        <span className="brand-logo shadow">Architects Of Fate</span>
         <ul className="right">
-          <li>Login</li>
-          <li>Signup</li>
+          <li className="shadow">Login</li>
+          <li className="shadow">Signup</li>
         </ul>
       </nav>
     )

@@ -1,3 +1,7 @@
+html, body {
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,8 +10,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: whitesmoke;
-  font-family: cursive, sans-serif;
+  background-image: linear-gradient(blue, darkblue);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
 }
 
 code {
@@ -23,6 +28,15 @@ code {
   float: right;
 }
 
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1%;
+  text-align: center;
+}
+
 .brand-logo {
   position: relative;
   float: left;
@@ -33,7 +47,7 @@ code {
 }
 
 nav {
-  background-color: rgba(100, 100, 100, .1);
+  background-color: rgba(0, 4, 255, 0.192);
   height: 75px;
 }
 
@@ -43,6 +57,61 @@ nav ul li {
   margin-top: 8px;
   font-size: 18px;
   font-weight: bold;
+}
+
+.container {
+  margin: 0 10%;
+  padding: 1% 0;
+}
+
+.dashboard-image {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background-image: url("images/architects-of-fate.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.dashboard-image .content {
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  padding: 1%;
+  margin: 1%;
+  color: black;
+}
+
+.card h1 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+  font-size: 36px;
+  font-family: cursive, sans-serif, serif;
+}
+
+.shadow {
+  text-shadow: 1px 1px 1px grey;
+}
+
+.card p {
+  font-size: 18px;
+  font-family: cursive, sans-serif, serif;
+}
+
+.no-border {
+  border: none;
+}
+
+.box-shadow {
+  box-shadow: 2px 2px grey;
+}
+
+.no-box-shadow {
+  box-shadow: none;
 }
 
 .clearfix::after {
